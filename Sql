@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS aula_ioo;
+
+USE aula_ioo;
+
+CREATE TABLE IF NOT EXISTS produto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descricao  character varying(50),
+    preco DOUBLE precision
+);
+
+INSERT INTO produto (descricao, preco) VALUES 
+('Mouse USB', 45.00),
+('Teclado mecanico', 150.00),
+('Mesa', 899.90);
+
+select * from produto;
+
+truncate table produto
